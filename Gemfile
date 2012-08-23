@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
-
 gem 'sqlite3', :group => [:development, :test]
+gem 'gravatar_image_tag'
+
 group :production do
   gem 'thin'
   gem 'pg'
@@ -16,6 +17,7 @@ end
 group :test do
   gem 'rspec', '2.11.0'
   gem 'webrat'
+  gem 'factory_girl_rails'
 end
 
 group :assets do
